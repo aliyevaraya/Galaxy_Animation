@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background: url("images/bodyImg.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galaxy {
+  position: relative;
+  margin: auto;
+  transform-origin: center;
+  animation: rotate 100s linear infinite;
+}
+.sun {
+  max-height: 250px;
+}
+.earth {
+  max-height: 100px;
+  position: absolute;
+  left: -80%;
+  top: 0%;
+  animation: rotate 60s infinite linear;
+}
+.moon {
+  max-height: 60px;
+  position: absolute;
+  top: 0%;
+  left: -30%;
+  animation: dolanimbasina 10s infinite linear;
+}
+.star img {
+  height: 20px;
+  position: absolute;
+  transform: scale(0);
+}
+.star1 img {
+  top: 0;
+  right: 50%;
+  animation: viu1 5s infinite linear;
+}
+.star2 img {
+  right: 20%;
+  animation: viu2 7s infinite linear;
+}
+.star3 img {
+  top: 0;
+  right: 2%;
+  animation: viu3 5s infinite linear;
+}
+.star4 img {
+  top: 2%;
+  right: 0;
+  animation: viu4 5s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dolanimbasina {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes viu1 {
+  0% {
+    top: 0;
+    right: 50%;
+    transform: scale(0);
+  }
+  100% {
+    top: 50%;
+    right: 100%;
+    transform: scale(1);
+  }
+}
+@keyframes viu2 {
+  0% {
+    top: 0;
+    right: 20%;
+    transform: scale(0);
+  }
+  100% {
+    top: 5%;
+    right: 15%;
+    transform: scale(1.4);
+  }
+}
+@keyframes viu3 {
+  0% {
+    right: 2%;
+    transform: scale(0);
+  }
+  100% {
+    top: 70%;
+    right: 50%;
+    transform: scale(1);
+  }
+}
+@keyframes viu4 {
+  0% {
+    top: 2%;
+    right: 0;
+    transform: scale(0);
+  }
+  100% {
+    top: 70%;
+    right: 48%;
+    transform: scale(1);
+  }
+}
