@@ -18,19 +18,24 @@ main {
 }
 .sun {
   max-height: 250px;
+  z-index: 2;
 }
 .earth {
-  max-height: 100px;
   position: absolute;
-  left: -80%;
-  top: 0%;
-  animation: rotate 60s infinite linear;
+  left: -50%;
+  top: -30%;
+  animation: rotate 40s infinite linear;
+  z-index: 2;
+}
+.earth img{
+  height: 100px;
 }
 .moon {
-  max-height: 60px;
+  max-height: 40px;
   position: absolute;
   top: 0%;
-  left: -30%;
+  left: -55%;
+  z-index: 2;
   animation: dolanimbasina 10s infinite linear;
 }
 .star img {
